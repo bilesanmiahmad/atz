@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'zone/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Agri Trading Zone</title>
+</head>
+<body>
+        
+    <div class="container-fluid">
+        <div id="logo">
+            <img src="{% static 'zone/img/logo.png' %}" width="25%" alt="">
+        </div>
+        <div class="content">
+            <h3>Are you in need of nuts, honey or seeds?</h3>
+            <p>AGRI TRADING ZONE, the B2B hub is the future of Agriculture in Africa.</p>
+            <p>The most convenient way to buy reliable, secured, and affordable agricultural goods.</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="features ">
+                <hr>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4 img-container">
+                        <img src="{% static 'zone/img/nuts.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-8 feature-content">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-8 col-data">
+                                <h2>Fast</h2>
+                                <p>Fast - Click, navigate, and request what may be of interest to you. 
+                                    Our dedicated/reliable team would prompt to give you a feedback.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-8 col-data">
+                                <h2>Secure</h2>
+                                <p>We have developed a large network of outgrowers in the heart West Africa 
+                                    to ensure quality control, as well as focus on quality production to meet 
+                                    your desired requirements.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-8 col-data">
+                                <h2>Simple</h2>
+                                <p>Get in touch with our team, and would provide you with every valuable 
+                                    information you may need. 
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-8 col-data">
+                                <h2>Free</h2>
+                                <p>With free subscription fees, we create a win-win partnership for our customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="partners">
+                <hr>
+                <hr>
+                <h2>We Teamed Up With:</h2>
+                <img src="{% static 'zone/img/mbc.png' %}" alt="MBC">
+                <img src="{% static 'zone/img/africseed.png' %}" alt="AFRICSEED">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="needs">
+                <hr>
+                <hr>
+                <h2>What do you need?</h2>
+                <div id="products-slide" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/baobabfruit.png' %}" alt="1 slide">
+                                    <h4>Baobab fruit</h4>
+                                </div>
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/honey.jpg' %}" alt="2 slide">
+                                    <h4>Pure Honey</h4>
+                                </div>
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/ses.png' %}" alt="3 slide">
+                                    <h4>Sesame Seeds</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/pistachio-nuts-in-a-bowl.jpg' %}" alt="4 slide">
+                                    <h4>Pistachio Nuts</h4>
+                                </div>
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/lots-of-nuts.png' %}" alt="5 slide">
+                                    <h4>Peanuts</h4>
+                                </div>
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/arabic.jpg' %}" alt="6 slide">
+                                    <h4>Arabic Gum</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="contact">
+                <hr>
+                <hr>
+                <h2>Let's Get In Touch</h2>
+                <form action="{% url 'index' %}" class="" method="POST">
+                    <!-- <input type="text" class="form-control" id="fname" placeholder="First Name" required>
+                    <br>
+                    <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                    <br>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    <br>
+                    <textarea name="" id="" class="form-control" rows="5" cols="30" placeholder="Message"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-success">Submit</button> -->
+                    {% csrf_token %}
+                    {{ form }}
+                    <br>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <footer>
+                <p>Agri Trading Zone is a product powered by SAGRIC S.A.S - Bamako, Mali.</p>
+                <p>Contact information: <a href="mailto:hello@agritradingzone.com">hello@agritradingzone.com</a>.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
