@@ -1,1 +1,1 @@
-web: gunicorn tradingzone.wsgi --logfile--
+web: gunicorn tradingzone.wsgi --log-file -
