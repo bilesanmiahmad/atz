@@ -34,7 +34,12 @@ form{
 }
 
 .translation{
+    width: 100%;
+    text-align: right;
+}
 
+#french{
+    margin-left: 5%;
 }
 
 .content{

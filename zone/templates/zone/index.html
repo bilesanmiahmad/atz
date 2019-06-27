@@ -19,11 +19,14 @@
 <body>
         
     <div class="container-fluid">
+        <div class="d-flex justify-content-end">
+            <span >
+                <a href="{% url 'english' %}">English</a>
+                <a id="french" href="{% url 'french' %}">French</a>
+            </span>
+        </div>
         <div id="logo">
             <img src="{% static 'zone/img/logo.png' %}" width="25%" alt="">
-            <span class="translation"><a href="{% url 'english' %}">English</a>
-                <a href="{% url 'french' %}">French</a></span>
-            
         </div>
         <div class="content">
             <h3>{% trans "Are you in need of nuts, pure honey or seeds?" %}</h3>
