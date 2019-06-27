@@ -20,4 +20,6 @@ from zone import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('french/', views.french, name='french'),
+    path('english/', views.english, name='english')
 ]

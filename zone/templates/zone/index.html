@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,11 +21,14 @@
     <div class="container-fluid">
         <div id="logo">
             <img src="{% static 'zone/img/logo.png' %}" width="25%" alt="">
+            <span class="translation"><a href="{% url 'english' %}">English</a>
+                <a href="{% url 'french' %}">French</a></span>
+            
         </div>
         <div class="content">
-            <h3>Are you in need of nuts, honey or seeds?</h3>
-            <p>AGRI TRADING ZONE, the B2B hub is the future of Agriculture in Africa.</p>
-            <p>The most convenient way to buy reliable, secured, and affordable agricultural goods.</p>
+            <h3>{% trans "Are you in need of nuts, pure honey or seeds?" %}</h3>
+            <p>{% trans "AGRI TRADING ZONE, the B2B hub is the future of Agriculture in Africa." %}</p>
+            <p>{% trans "The most convenient way to buy reliable, secured, and affordable agricultural goods." %}</p>
         </div>
         <div class="d-flex justify-content-center">
             <div class="features ">
@@ -37,29 +41,25 @@
                     <div class="col-md-8 feature-content">
                         <div class="row">
                             <div class="col-md-4 col-sm-8 col-data">
-                                <h2>Fast</h2>
-                                <p>Fast - Click, navigate, and request what may be of interest to you. 
-                                    Our dedicated/reliable team would prompt to give you a feedback.
+                                <h2>{% trans "Fast" %}</h2>
+                                <p>{% trans "Fast - Click, navigate, and request what may be of interest to you. Our dedicated/reliable team would prompt to give you a feedback." %}
                                 </p>
                             </div>
                             <div class="col-md-4 col-sm-8 col-data">
-                                <h2>Secure</h2>
-                                <p>We have developed a large network of outgrowers in the heart West Africa 
-                                    to ensure quality control, as well as focus on quality production to meet 
-                                    your desired requirements.
+                                <h2>{% trans "Secure" %}</h2>
+                                <p>{% trans "We have developed a large network of outgrowers in the heart West Africa to ensure quality control, as well as focus on quality production to meet your desired requirements." %}
                                 </p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4 col-sm-8 col-data">
-                                <h2>Simple</h2>
-                                <p>Get in touch with our team, and would provide you with every valuable 
-                                    information you may need. 
+                                <h2>{% trans "Simple" %}</h2>
+                                <p>{% trans "Get in touch with our team, and would provide you with every valuable information you may need." %}
                                 </p>
                             </div>
                             <div class="col-md-4 col-sm-8 col-data">
-                                <h2>Free</h2>
-                                <p>With free subscription fees, we create a win-win partnership for our customers</p>
+                                <h2>{% trans "Free" %}</h2>
+                                <p>{% trans "With free subscription fees, we create a win-win partnership for our customers" %}</p>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
             <div class="partners">
                 <hr>
                 <hr>
-                <h2>We Teamed Up With:</h2>
+                <h2>{% trans "We Teamed Up With:" %}</h2>
                 <img src="{% static 'zone/img/mbc.png' %}" alt="MBC">
                 <img src="{% static 'zone/img/africseed.png' %}" alt="AFRICSEED">
             </div>
@@ -80,22 +80,22 @@
             <div class="needs">
                 <hr>
                 <hr>
-                <h2>What do you need?</h2>
+                <h2>{% trans "What do you need?" %}</h2>
                 <div id="products-slide" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col">
                                     <img class="c-img" src="{% static 'zone/img/baobabfruit.png' %}" alt="1 slide">
-                                    <h4>Baobab fruit</h4>
+                                    <h4>{% trans "Baobab fruit" %}</h4>
                                 </div>
                                 <div class="col">
                                     <img class="c-img" src="{% static 'zone/img/honey.jpg' %}" alt="2 slide">
-                                    <h4>Pure Honey</h4>
+                                    <h4>{% trans "Pure Honey" %}</h4>
                                 </div>
                                 <div class="col">
                                     <img class="c-img" src="{% static 'zone/img/ses.png' %}" alt="3 slide">
-                                    <h4>Sesame Seeds</h4>
+                                    <h4>{% trans "Sesame Seeds" %}</h4>
                                 </div>
                             </div>
                         </div>
@@ -103,15 +103,47 @@
                             <div class="row">
                                 <div class="col">
                                     <img class="c-img" src="{% static 'zone/img/pistachio-nuts-in-a-bowl.jpg' %}" alt="4 slide">
-                                    <h4>Pistachio Nuts</h4>
+                                    <h4>{% trans "Pistachio Nuts" %}</h4>
                                 </div>
                                 <div class="col">
                                     <img class="c-img" src="{% static 'zone/img/lots-of-nuts.png' %}" alt="5 slide">
-                                    <h4>Peanuts</h4>
+                                    <h4>{% trans "Peanuts" %}</h4>
                                 </div>
                                 <div class="col">
                                     <img class="c-img" src="{% static 'zone/img/arabic.jpg' %}" alt="6 slide">
-                                    <h4>Arabic Gum</h4>
+                                    <h4>{% trans "Arabic Gum" %}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/ginger.jpg' %}" alt="7 slide">
+                                    <h4>{% trans "Ginger" %}</h4>
+                                </div>
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/hibiscus.jpg' %}" alt="8 slide">
+                                    <h4>{% trans "Hibiscus" %}</h4>
+                                </div>
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/pepper.jpg' %}" alt="9 slide">
+                                    <h4>{% trans "Pepper" %}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/walnut.jpg' %}" alt="7 slide">
+                                    <h4>{% trans "Walnut" %}</h4>
+                                </div>
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/wheat.jpg' %}" alt="8 slide">
+                                    <h4>{% trans "Wheat" %}</h4>
+                                </div>
+                                <div class="col">
+                                    <img class="c-img" src="{% static 'zone/img/peas.jpg' %}" alt="9 slide">
+                                    <h4>{% trans "Peas" %}</h4>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +155,7 @@
             <div class="contact">
                 <hr>
                 <hr>
-                <h2>Let's Get In Touch</h2>
+                <h2>{% trans "Let's Get In Touch" %}</h2>
                 <form action="{% url 'index' %}" class="" method="POST">
                     <!-- <input type="text" class="form-control" id="fname" placeholder="First Name" required>
                     <br>
@@ -137,14 +169,14 @@
                     {% csrf_token %}
                     {{ form }}
                     <br>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-success">{% trans "Submit" %}</button>
                 </form>
             </div>
         </div>
         <div class="d-flex justify-content-center">
             <footer>
-                <p>Agri Trading Zone is a product powered by SAGRIC S.A.S - Bamako, Mali.</p>
-                <p>Contact information: <a href="mailto:hello@agritradingzone.com">hello@agritradingzone.com</a>.</p>
+                <p>{% trans "Agri Trading Zone is a product powered by SAGRIC S.A.S - Bamako, Mali." %}</p>
+                <p>{% trans "Contact information:" %} <a href="mailto:hello@agritradingzone.com">hello@agritradingzone.com</a>.</p>
             </footer>
         </div>
     </div>
