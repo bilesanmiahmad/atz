@@ -1442,7 +1442,7 @@ msgstr "Lequel vous interresse?"
 
 #: zone/templates/zone/index.html:90
 msgid "Baobab fruit"
-msgstr "Baobab aux fruits"
+msgstr "Fruit de Baobab"
 
 #: zone/templates/zone/index.html:94
 msgid "Pure Honey"
@@ -1478,7 +1478,7 @@ msgstr "Poivre"
 
 #: zone/templates/zone/index.html:138
 msgid "Walnut"
-msgstr "Noyer"
+msgstr "Noix"
 
 #: zone/templates/zone/index.html:142
 msgid "Wheat"
