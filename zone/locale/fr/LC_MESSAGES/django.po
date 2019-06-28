@@ -1367,12 +1367,12 @@ msgstr "Message"
 
 #: zone/templates/zone/index.html:29
 msgid "Are you in need of nuts, pure honey or seeds?"
-msgstr "Avez-vous besoin de noix, de miel pur ou de graines?"
+msgstr "Avez-vous besoin de noix, de miel pur, ou des graines?"
 
 #: zone/templates/zone/index.html:30
 msgid "AGRI TRADING ZONE, the B2B hub is the future of Agriculture in Africa."
 msgstr ""
-"AGRI TRADING ZONE, le hub B2B est l'avenir de l'agriculture en Afrique."
+"AGRI TRADING ZONE, la plateforme B2B est l'avenir de l'Agriculture en Afrique."
 
 #: zone/templates/zone/index.html:31
 msgid ""
@@ -1391,12 +1391,12 @@ msgid ""
 "Fast - Click, navigate, and request what may be of interest to you. Our "
 "dedicated/reliable team would prompt to give you a feedback."
 msgstr ""
-"Cliquez, naviguez, et demander ce qui peut vous intéresser. Notre équipe "
-"dédiée / fiable vous inciterait à vous faire part de vos commentaires."
+"Cliquez rapidement, naviguez et demandez ce qui peut vous intéresser."
+" Notre équipe dévouée et fiable est à votre écoute."
 
 #: zone/templates/zone/index.html:49
 msgid "Secure"
-msgstr "Sûr"
+msgstr "Sécuriser"
 
 #: zone/templates/zone/index.html:50
 msgid ""
@@ -1429,16 +1429,16 @@ msgid ""
 "With free subscription fees, we create a win-win partnership for our "
 "customers"
 msgstr ""
-"Avec des frais d'abonnement gratuits, nous créons un partenariat gagnant-"
-"gagnant pour nos clients"
+"Sans frais d'abonnement et sans engagement, nous créons un partenariat  "
+"gagnant pour nos clients."
 
 #: zone/templates/zone/index.html:74
 msgid "We Teamed Up With:"
-msgstr "Nous avons fait équipe avec:"
+msgstr "Nos partenaires sont:"
 
 #: zone/templates/zone/index.html:83
 msgid "What do you need?"
-msgstr "De quoi avez-vous besoin?"
+msgstr "Lequel vous interresse?"
 
 #: zone/templates/zone/index.html:90
 msgid "Baobab fruit"
@@ -1461,7 +1461,7 @@ msgid "Peanuts"
 msgstr "Cacahuètes"
 
 #: zone/templates/zone/index.html:114
-msgid "Arabic Gum"
+msgid "Arabica Gum"
 msgstr "Gomme arabique"
 
 #: zone/templates/zone/index.html:122
@@ -1490,7 +1490,7 @@ msgstr "Pois"
 
 #: zone/templates/zone/index.html:158
 msgid "Let's Get In Touch"
-msgstr "Entrons en contact"
+msgstr "Contactez nous"
 
 #: zone/templates/zone/index.html:172
 msgid "Submit"
