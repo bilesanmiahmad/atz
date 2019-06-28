@@ -1404,7 +1404,7 @@ msgid ""
 "ensure quality control, as well as focus on quality production to meet your "
 "desired requirements."
 msgstr ""
-"Nous avons développé un vaste réseau de sous-traitants au cœur de l'Afrique "
+"Nous avons développé un vaste réseau de partenaires au cœur de l'Afrique "
 "de l'Ouest pour assurer un contrôle de qualité, ainsi que se concentrer sur "
 "la production de qualité pour répondre à vos exigences souhaitées."
 
