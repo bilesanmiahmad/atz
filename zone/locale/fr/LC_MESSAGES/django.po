@@ -1474,7 +1474,7 @@ msgstr "Hibiscus"
 
 #: zone/templates/zone/index.html:130
 msgid "Pepper"
-msgstr "Poivre"
+msgstr "Piment"
 
 #: zone/templates/zone/index.html:138
 msgid "Walnut"
