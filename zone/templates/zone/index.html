@@ -28,6 +28,22 @@
         <div id="logo">
             <img src="{% static 'zone/img/logo.png' %}" width="25%" alt="">
         </div>
+        <div class="navbar navbar-expand-sm bg-light justify-content-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#partners">Partners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
         <div class="content">
             <h3>{% trans "Are you in need of nuts, pure honey or seeds?" %}</h3>
             <p>{% trans "AGRI TRADING ZONE, the B2B hub is the future of Agriculture in Africa." %}</p>
@@ -43,6 +59,7 @@
                     </div>
                     <div class="col-md-8 feature-content">
                         <div class="row">
+                            <a name='features'></a>
                             <div class="col-md-4 col-sm-8 col-data">
                                 <h2>{% trans "Fast" %}</h2>
                                 <p>{% trans "Fast - Click, navigate, and request what may be of interest to you. Our dedicated/reliable team would prompt to give you a feedback." %}
@@ -71,6 +88,7 @@
             
         </div>
         <div class="d-flex justify-content-center">
+            <a name="partners"></a>
             <div class="partners">
                 <hr>
                 <hr>
@@ -85,6 +103,7 @@
                 <hr>
                 <h2>{% trans "What do you need?" %}</h2>
                 <div id="products-slide" class="carousel slide" data-ride="carousel">
+                    <a name="products"></a>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
@@ -155,6 +174,7 @@
             </div>
         </div>
         <div class="d-flex justify-content-center">
+            <a name="contact"></a>
             <div class="contact">
                 <hr>
                 <hr>
