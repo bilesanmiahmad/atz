@@ -98,3 +98,5 @@ CACHE/
 media
 CACHE
 .vscode/
+venv/
+db.sqlite3
